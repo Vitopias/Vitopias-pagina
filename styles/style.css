@@ -149,7 +149,7 @@ a{
 
 /*---NAVBAR CSS cierre---*/
 
-.carousel{
+.estructura-index{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -169,4 +169,34 @@ a{
 .contacto-footer{
     margin: 2rem;
     width: 4rem;
+}
+
+.estructura-secundaria{
+    padding: 10vw;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    color: rgb(137, 137, 137);
+}
+.estructura-secundaria p{
+    margin-bottom: 6rem;
+}
+
+.presentacion__secciones{ 
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+}
+.galeria{
+    border-style: solid;
+    border-color: #000000;
+}
+.galeria__vertical{
+    margin-left: 2.2rem;
+    margin-right: 2rem;
+    max-width: 80%;
+    border-style: solid;
+    border-color: #000000;
 }
