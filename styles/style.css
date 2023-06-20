@@ -13,6 +13,10 @@ img{
 }
 a{
     text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+h6{
+    color: rgb(137, 137, 137);
 }
 /*----------- NAVBAR CSS -------------*/
 
@@ -167,8 +171,9 @@ a{
 }
 
 .contacto-footer{
-    margin: 2rem;
-    width: 4rem;
+    margin: 1.5rem;
+    height: 2rem;
+    width: 6rem;
 }
 
 .estructura-secundaria{
@@ -179,8 +184,12 @@ a{
     align-items: center;
     color: rgb(137, 137, 137);
 }
+.estructura-secundaria h2{
+    margin-bottom: 0.5rem;
+    color: rgb(70, 70, 70);
+}
 .estructura-secundaria p{
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 }
 
 .presentacion__secciones{ 
@@ -189,6 +198,11 @@ a{
     grid-template-rows: 1fr;
     gap: 2rem;
 }
+.tarjeta-galerias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .galeria{
     border-style: solid;
     border-color: #000000;
@@ -196,7 +210,8 @@ a{
 .galeria__vertical{
     margin-left: 2.2rem;
     margin-right: 2rem;
+    margin-bottom: 1rem;
     max-width: 80%;
     border-style: solid;
-    border-color: #000000;
+    border-color: #212121;
 }
