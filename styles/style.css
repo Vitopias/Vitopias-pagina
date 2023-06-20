@@ -102,7 +102,6 @@ h6{
 
 .menu__desplegable .menu-items {
     padding-top: 120px;
-
     box-shadow: inset 0 2000px rgb(255, 255, 255);
     height: 100vh;
     width: 100%;
@@ -176,19 +175,24 @@ h6{
     width: 6rem;
 }
 
-.estructura-secundaria{
+/* ---- Pagina Autor ----*/
+.estructura__secundaria{
     padding: 10vw;
     display: flex;
     flex-direction: column;
-
     align-items: center;
     color: rgb(137, 137, 137);
 }
-.estructura-secundaria h2{
+.estructura__secundaria h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 0.5rem;
     color: rgb(70, 70, 70);
 }
-.estructura-secundaria p{
+.estructura__secundaria p{
+    display: flex;
+    align-items: center;
     margin-bottom: 3rem;
 }
 
@@ -205,7 +209,7 @@ h6{
 }
 .galeria{
     border-style: solid;
-    border-color: #000000;
+    border-color: #919191;
 }
 .galeria__vertical{
     margin-left: 2.2rem;
@@ -213,5 +217,17 @@ h6{
     margin-bottom: 1rem;
     max-width: 80%;
     border-style: solid;
-    border-color: #212121;
+    border-color: #919191;
+}
+
+.estructura__terciaria{
+    padding: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(137, 137, 137);
+}
+
+.estructura__terciaria h2{
+    color: rgb(70, 70, 70);
 }
