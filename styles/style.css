@@ -26,7 +26,7 @@ li{
 
 
 /*----------- NAVBAR CSS -------------*/
-.menu__escritorio{
+.escritorio{
     display: none;
 }
 .menu-lineas {
@@ -161,7 +161,7 @@ li{
 
 /*---NAVBAR CSS cierre---*/
 
-.estructura-index{
+.estructura__index{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -240,21 +240,48 @@ li{
 .estructura__terciaria h2{
     color: rgb(70, 70, 70);
 }
-@media (min-width: 768px) {
-.menu-lineas, .menu-items, .menu__desplegable, .hamburger-lines, .checkbox, .line, .line1, .line2, .line3 {
+
+
+
+
+
+@media (min-width: 919px) and (orientation:landscape) {
+.navbox, .menu-lineas, .menu-items, .menu__desplegable, .hamburger-lines, .checkbox, .line, .line1, .line2, .line3 {
         display: none;
 }
-.estructura__escritorio{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 2fr 7fr;
+.titulo-escritorio a{
+    color: #000000;
 }
-.menu__escritorio{
-    padding-bottom: 40rem;
-    padding-left: 10rem;
+.titulo-escritorio{
+    margin-top: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
+.estructura__escritorio{
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
+}
+.menu__escritorio{
+    margin-left: 10rem;
+    padding-bottom: 17rem;
+    display: flex;
+    flex-direction: column;
+}
 } 
+
+@media (min-width: 1000px) and (orientation:landscape){
+    .carousel-item{
+        max-width: 1000px;
+        padding: 10rem;
+    }
+}
+@media (min-width: 1400px) and (orientation:landscape){
+    .carousel-item{
+        margin-left:10rem;
+    }
+}
