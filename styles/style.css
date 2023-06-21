@@ -18,8 +18,17 @@ a{
 h6{
     color: rgb(137, 137, 137);
 }
-/*----------- NAVBAR CSS -------------*/
+li{
+    list-style: none;
+    font-weight: bolder;
+}
 
+
+
+/*----------- NAVBAR CSS -------------*/
+.menu__escritorio{
+    display: none;
+}
 .menu-lineas {
     max-width: 1050px;
     width: 90%;
@@ -231,3 +240,21 @@ h6{
 .estructura__terciaria h2{
     color: rgb(70, 70, 70);
 }
+@media (min-width: 768px) {
+.menu-lineas, .menu-items, .menu__desplegable, .hamburger-lines, .checkbox, .line, .line1, .line2, .line3 {
+        display: none;
+}
+.estructura__escritorio{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+}
+.menu__escritorio{
+    padding-bottom: 40rem;
+    padding-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+} 
