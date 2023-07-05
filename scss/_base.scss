@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img{
+    max-width:  100%;
+}
+a{
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+h6{
+    color: rgb(137, 137, 137);
+}
+li{
+    list-style: none;
+    font-weight: bolder;
+}
+
+.escritorio{
+    display: none;
+}
+
+@media (min-width: 1024px) and (orientation:landscape) {
+    .navbox, .menu-lineas, .menu-items, .menu__desplegable, .hamburger-lines, .checkbox, .line, .line1, .line2, .line3 {
+            display: none;
+    }
+}

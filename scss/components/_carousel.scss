@@ -1,0 +1,28 @@
+.carousel{
+    display: flex;
+    align-items: center;
+    height: 65vh;
+}
+.carousel-inner{
+    margin: 10vh 0vw;
+    padding: 10vw;
+}
+
+
+@media (min-width: 768px) and (orientation:landscape){
+    .carousel{
+        max-width: 680px;
+
+    }
+    .carousel-inner{
+        margin: 0;
+        padding: 0;
+
+    }
+}
+
+@media (min-width: 1024px) and (orientation:landscape){
+    .carousel{
+    margin: 0;
+}
+}

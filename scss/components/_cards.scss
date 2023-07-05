@@ -1,0 +1,35 @@
+.tarjeta-galerias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.galeria{
+    border-style: solid;
+    border-color: #919191;
+}
+.galeria__vertical{
+    margin-left: 2.2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    max-width: 80%;
+    border-style: solid;
+    border-color: #919191;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.tarjeta__contacto{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & p{
+        margin: 0;
+    }
+}

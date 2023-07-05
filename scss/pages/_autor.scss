@@ -1,0 +1,23 @@
+
+
+
+
+@media (min-width: 1024px) and (orientation:landscape) {
+
+    .main__autor{
+        display:flex;
+        flex-direction: column;
+        width: 680px;
+        height: 581.09px;
+        &--margin{
+            margin-right: 5vw;
+}
+    }
+
+
+    .colecciones{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+}
