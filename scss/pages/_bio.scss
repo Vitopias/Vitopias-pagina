@@ -1,21 +1,23 @@
-.texto__bio{
+.seccion__bio{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.galeria__bio{
-    padding: 3vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    &git --galeria{
+        padding: 3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+            & img{
+            max-height: 360px;
+        }
+    }
 }
 
-.imagen__biog{
-    max-height: 360px;
-}
 
 @media (min-width: 768px) and (orientation:landscape) {
-    .main__bio{
+    .seccion__bio{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -23,15 +25,13 @@
 
 }
 @media (min-width: 1024px) and (orientation:landscape) {
-    .main__bio{
+    .seccion__bio{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         height: 581.09px;
         width: 680px;
-        &--margin{
-            margin-right: 5vw;
-}
+        margin-right: 5vw;
     }
     .texto__bio{
         max-width: 300px;

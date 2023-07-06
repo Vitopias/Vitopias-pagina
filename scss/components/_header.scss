@@ -3,21 +3,27 @@
     top: 5vh;
     right: 15vw;
     font-size: 1rem;
-}
-.titulo a {
-    color: #000000;
-}
-
-@media (min-width: 1024px) and (orientation:landscape) {
-    .titulo-escritorio a{
+    
+    
+    & a {
         color: #000000;
     }
+}
+
+
+@media (min-width: 1024px) and (orientation:landscape) {
+
     .titulo-escritorio{
         margin-top: 3rem;
         margin-left: 5rem;
         margin-right: 5rem;
         display: flex;
         flex-direction: column;
+
+        
+        &  a{
+            color: #000000;
+        }
     }
     
     }

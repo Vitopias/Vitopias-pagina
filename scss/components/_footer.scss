@@ -9,3 +9,8 @@
     height: 2rem;
     width: 6rem;
 }
+@media (min-width: 1024px) and (orientation:landscape) {
+    .contacto-footer{
+        margin-top: 5vh;
+    }
+}

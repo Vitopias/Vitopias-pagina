@@ -1,18 +1,14 @@
 @media (min-width: 768px) and (orientation:landscape) {
     .main__index{
+        display: flex;
+        align-items: center;
         justify-content: space-around;
-
-        &--escritorio{    
-            display: flex;
-            align-items: center;
-        }
-    }
-
-    }
-    @media (min-width: 1024px) and (orientation:landscape) {
-        .main__index {
-            &--margin{
-                margin-right: 5vw;
     }
 }
+
+    @media (min-width: 1024px) and (orientation:landscape) {
+        .main__index {
+            height: 590px;
+            margin-right: 5vw;
+    }
 }
