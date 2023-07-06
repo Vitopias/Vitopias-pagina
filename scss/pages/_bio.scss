@@ -2,19 +2,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    &git --galeria{
-        padding: 3vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-            & img{
-            max-height: 360px;
-        }
+}
+.galeria__bio{
+    padding: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+        & img{
+        max-height: 360px;
     }
 }
-
 
 @media (min-width: 768px) and (orientation:landscape) {
     .seccion__bio{

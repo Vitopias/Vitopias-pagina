@@ -302,13 +302,14 @@ li {
   flex-direction: column;
   justify-content: center;
 }
-.seccion__biogit --galeria {
+
+.galeria__bio {
   padding: 3vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.seccion__biogit --galeria img {
+.galeria__bio img {
   max-height: 360px;
 }
 
