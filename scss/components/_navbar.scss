@@ -117,7 +117,7 @@
 @media (min-width: 1024px) and (orientation:landscape) {
 .nav__escritorio{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+    margin-top: 15vh;
 }
-
 }

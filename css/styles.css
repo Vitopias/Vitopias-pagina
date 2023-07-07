@@ -154,6 +154,7 @@ li {
   .nav__escritorio {
     display: flex;
     flex-direction: column;
+    margin-top: 15vh;
   }
 }
 .titulo {
@@ -178,43 +179,39 @@ li {
     color: #000000;
   }
 }
-.main__secciones {
+.main {
   padding: 10vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: rgb(137, 137, 137);
 }
-.main__secciones h2 {
+.main h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 0.5rem;
   color: rgb(70, 70, 70);
 }
-.main__secciones p {
+.main p {
   display: flex;
   align-items: center;
   margin-bottom: 3rem;
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
-  .main__secciones {
+  .main {
     padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: start;
   }
 }
 .carousel {
   display: flex;
   align-items: center;
   height: 65vh;
-}
-
-.carousel-inner {
-  margin: 10vh 0vw;
-  padding: 10vw;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
@@ -284,19 +281,6 @@ li {
     margin-top: 5vh;
   }
 }
-@media (min-width: 768px) and (orientation: landscape) {
-  .main__index {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-}
-@media (min-width: 1024px) and (orientation: landscape) {
-  .main__index {
-    height: 590px;
-    margin-right: 5vw;
-  }
-}
 .seccion__bio {
   display: flex;
   flex-direction: column;
@@ -325,7 +309,7 @@ li {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 581.09px;
+    height: 601px;
     width: 680px;
     margin-right: 5vw;
   }
@@ -344,7 +328,6 @@ li {
     display: flex;
     flex-direction: column;
     width: 680px;
-    height: 581.09px;
     margin-right: 5vw;
   }
   .colecciones {
