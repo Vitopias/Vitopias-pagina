@@ -17,6 +17,7 @@
     .seccion{
         display:flex;
         flex-direction: column;
+        justify-content: space-around;
         min-height: 601px;
         width: 680px;
         margin-right: 5vw;

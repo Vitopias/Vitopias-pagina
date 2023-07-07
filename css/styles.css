@@ -226,6 +226,7 @@ li {
   .seccion {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     min-height: 601px;
     width: 680px;
     margin-right: 5vw;
@@ -267,7 +268,7 @@ li {
 }
 @media (min-width: 1024px) and (orientation: landscape) {
   .carousel {
-    margin: 0;
+    margin-right: 5vw;
   }
 }
 .galeria {
