@@ -1,16 +1,19 @@
-.flex-footer{
+.footer {
     display: flex;
     flex-direction: column;    
     align-items: center;
+
+    &__logos{
+        margin: 1.5rem;
+        height: 2rem;
+        width: 6rem;
+    }
 }
 
-.contacto-footer{
-    margin: 1.5rem;
-    height: 2rem;
-    width: 6rem;
-}
 @media (min-width: 1024px) and (orientation:landscape) {
-    .contacto-footer{
+    .footer{
+        &__logos{
         margin-top: 5vh;
     }
+}
 }

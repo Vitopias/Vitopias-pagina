@@ -1,0 +1,26 @@
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: #919191;
+}
+.galeria__vertical{
+    margin-left: 2.2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    max-width: 80%;
+    border-style: solid;
+    border-color: #919191;
+    object-fit: contain;
+}
+.galeria__bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        & img{
+    max-width: 240px;
+}
+}
