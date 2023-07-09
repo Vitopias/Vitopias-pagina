@@ -6,16 +6,16 @@
     align-items: center;
     border-style: solid;
     border-color: #919191;
-    width: 70vw;
+
 }
 .galeria__vertical{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-left: 2.2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    max-width: 60%;
     border-style: solid;
     border-color: #919191;
-    height: 65vw;
+
 }
 
 .galeria__bio{
@@ -28,11 +28,7 @@
 }
 @media (min-width: 768px) and (orientation:landscape) {
 
-    .galeria{
-        width: 35vw;
-    }
     .galeria__vertical{ 
-        width: 20vw; 
-        height: auto;
+    max-width: 80%; 
 }  
 }

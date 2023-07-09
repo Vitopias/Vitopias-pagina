@@ -26,6 +26,10 @@ li {
   font-weight: bolder;
 }
 
+h5 {
+  font-size: 1.1rem;
+}
+
 .escritorio {
   display: none;
 }
@@ -226,20 +230,21 @@ li {
   .seccion {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     min-height: 601px;
-    width: 680px;
+    width: 800px;
     margin-right: 5vw;
   }
   .seccion__horizontal {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     height: 601px;
-    width: 680px;
+    width: 800px;
     margin-right: 5vw;
   }
   .seccion__texto--autor {
+    padding: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,6 +254,14 @@ li {
   }
   .seccion__texto--bio {
     max-width: 300px;
+  }
+}
+@media (min-width: 1440px) and (orientation: landscape) {
+  .seccion {
+    width: 1200px;
+  }
+  .seccion__horizontal {
+    width: 1200px;
   }
 }
 .carousel {
@@ -271,6 +284,46 @@ li {
     margin-right: 5vw;
   }
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.grid__galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.grid__galeria--posters {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .grid__galeria {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) and (orientation: landscape) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid__galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  .grid__galeria--posters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .galeria {
   display: flex;
   flex-direction: column;
@@ -278,16 +331,17 @@ li {
   align-items: center;
   border-style: solid;
   border-color: #919191;
+  width: 70vw;
 }
 
 .galeria__vertical {
-  margin-left: 2.2rem;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-style: solid;
   border-color: #919191;
-  object-fit: contain;
+  height: 65vw;
 }
 
 .galeria__bio {
@@ -299,6 +353,15 @@ li {
   max-width: 240px;
 }
 
+@media (min-width: 768px) and (orientation: landscape) {
+  .galeria {
+    width: 35vw;
+  }
+  .galeria__vertical {
+    width: 20vw;
+    height: auto;
+  }
+}
 .tarjeta {
   display: flex;
   flex-direction: column;
@@ -328,24 +391,6 @@ li {
 @media (min-width: 1024px) and (orientation: landscape) {
   .footer__logos {
     margin-top: 5vh;
-  }
-}
-.colecciones {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-@media (min-width: 1024px) and (orientation: landscape) {
-  .colecciones {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .colecciones__galeria {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: center;
   }
 }
 @media (min-width: 1024px) and (orientation: landscape) {
