@@ -1,5 +1,12 @@
-$color-principal: rgb(70, 70, 70);
+$color-principal: #dadada;
 $color-secundario:  rgb(137, 137, 137);
+$color-terciario: rgba(49, 48, 48, 0.859);
+
+$dot-size: 2px;
+$dot-space: 4px;
+
+$bg-color: rgb(5, 35, 35);
+$dot-color:  rgb(54, 16, 16);
 
 @mixin flex($direction, $justify, $align,){
     display: flex;
@@ -22,8 +29,12 @@ $color-secundario:  rgb(137, 137, 137);
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(250, 255, 255);
-}
+        background:
+            linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+            linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+            $dot-color;
+        background-size: $dot-space $dot-space;
+    }
 
 img{
     max-width:  100%;
@@ -47,9 +58,15 @@ h3{
     font-size: 1.1rem;
     font-weight: bold;
 }
+hr{
+    background: $color-secundario;
+}
 
 .escritorio{
     display: none;
+    & p{
+        color: $color-secundario;
+    }
 }
 main{
     @include flex(column, normal, center);
