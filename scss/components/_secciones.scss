@@ -1,9 +1,7 @@
 .seccion{
 
     &__horizontal{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+        @include flex(column, center, normal)
 }
 }
 
@@ -16,34 +14,25 @@
 }
 @media (min-width: 1024px) and (orientation:landscape) {
     .seccion{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        @include flex(column, space-evenly, normal);
         min-height: 601px;
         width: 800px;
         margin-right: 5vw;
 
         &__horizontal{
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flex(row, space-evenly, center);
             height: 601px;
             width: 800px;
             margin-right: 5vw;
         }
 
         &__texto{
-
-            &--autor{
+            @include flex(column, normal, center);
                 padding: 5vh;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
                     & p{
                         max-width: 450px;
                 }
-            }
+            
 
             &--bio{
             max-width: 300px;

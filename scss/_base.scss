@@ -1,3 +1,19 @@
+$color-principal: rgb(70, 70, 70);
+$color-secundario:  rgb(137, 137, 137);
+
+@mixin flex($direction, $justify, $align,){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin grid($columns, $gap, $align,){
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+    align-items: $align;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +22,7 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(250, 255, 255);
 }
 
 img{
@@ -13,25 +30,55 @@ img{
 }
 a{
     text-decoration: none;
-    color: rgb(70, 70, 70);
+    color: $color-principal;
+    &:hover{
+        color: $color-secundario;
+    }
 }
 h6{
-    color: rgb(137, 137, 137);
+    color: $color-secundario;
 }
 li{
     list-style: none;
-    font-weight: bolder;
+    font-weight: bold;
 }
-h5{
+
+h3{
     font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .escritorio{
     display: none;
 }
+main{
+    @include flex(column, normal, center);
+    padding: 10vw;
+    color: $color-secundario;
+
+    & h2{
+        @include flex(column, normal, center);
+        margin-bottom: 0.5rem;
+        color:$color-principal;
+    }
+    & p{
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+}
 
 @media (min-width: 1024px) and (orientation:landscape) {
+
     .navbox, .menu-lineas, .menu-items, .menu__desplegable, .hamburger-lines, .checkbox, .line, .line1, .line2, .line3 {
-            display: none;
+        display: none;
+}
+    main{
+        @include flex(row, space-around, start);
+        padding: 0;
+    }
+    h3{
+        font-size: 1.7rem;
+        font-weight: normal;
     }
 }
