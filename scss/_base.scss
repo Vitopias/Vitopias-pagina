@@ -2,11 +2,15 @@ $color-principal: #dadada;
 $color-secundario:  rgb(137, 137, 137);
 $color-terciario: rgba(49, 48, 48, 0.859);
 
-$dot-size: 2px;
-$dot-space: 4px;
-
 $bg-color: rgb(5, 35, 35);
 $dot-color:  rgb(54, 16, 16);
+
+$dot-size1: 1px;
+$dot-space1: 2px;
+$dot-size2: 2px;
+$dot-space2: 4px;
+
+
 
 @mixin flex($direction, $justify, $align,){
     display: flex;
@@ -30,10 +34,10 @@ $dot-color:  rgb(54, 16, 16);
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background:
-            linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-            linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+            linear-gradient(90deg, $bg-color ($dot-space1 - $dot-size1), transparent 1%) center,
+            linear-gradient($bg-color ($dot-space1 - $dot-size1), transparent 1%) center,
             $dot-color;
-        background-size: $dot-space $dot-space;
+        background-size: $dot-space1 $dot-space1;
     }
 
 img{
@@ -90,6 +94,13 @@ main{
     .navbox, .menu-lineas, .menu-items, .menu__desplegable, .hamburger-lines, .checkbox, .line, .line1, .line2, .line3 {
         display: none;
 }
+body {
+        background:
+            linear-gradient(90deg, $bg-color ($dot-space2 - $dot-size2), transparent 1%) center,
+            linear-gradient($bg-color ($dot-space2 - $dot-size2), transparent 1%) center,
+            $dot-color;
+        background-size: $dot-space2 $dot-space2;
+    }
     main{
         @include flex(row, space-around, start);
         padding: 0;
