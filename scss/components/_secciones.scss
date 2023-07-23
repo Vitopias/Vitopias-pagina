@@ -1,7 +1,15 @@
 .seccion{
 
     &__horizontal{
-        @include flex(column, center, normal)
+        @include flex(column, center, center);
+    }
+    &__texto{
+        
+            @include flex(column, normal, center);
+            &--bio{
+                max-width: 500px;
+                }
+        
 }
 }
 
@@ -21,15 +29,16 @@
 
         &__horizontal{
             @include flex(row, space-evenly, center);
-            height: 601px;
+            height: 525px;
             width: 800px;
             margin-right: 5vw;
         }
 
         &__texto{
-            @include flex(column, normal, center);
+
                 padding: 5vh;
                     & p{
+                        margin-bottom: 2rem;
                         max-width: 450px;
                 }
             

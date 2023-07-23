@@ -50,9 +50,7 @@ a{
         color: $color-secundario;
     }
 }
-h6{
-    color: $color-secundario;
-}
+
 li{
     list-style: none;
     font-weight: bold;
@@ -62,6 +60,12 @@ h3{
     font-size: 1.1rem;
     font-weight: bold;
 }
+
+h4{
+    color: $color-secundario;
+    font-size: 0.9rem;
+}
+
 hr{
     background: $color-secundario;
 }
@@ -85,13 +89,14 @@ main{
     & p{
         display: flex;
         align-items: center;
-        margin-bottom: 3rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
     }
 }
 
 @media (min-width: 1024px) and (orientation:landscape) {
 
-    .navbox, .menu-lineas, .menu-items, .menu__desplegable, .hamburger-lines, .checkbox, .line, .line1, .line2, .line3 {
+    .navbox, .menu-lineas, .menu-items, .menu__desplegable, .hamburger-lines, .checkbox, .line, .line1, .line2, .line3, .linea-mobile {
         display: none;
 }
 body {
@@ -101,12 +106,15 @@ body {
             $dot-color;
         background-size: $dot-space2 $dot-space2;
     }
-    main{
+main{
         @include flex(row, space-around, start);
         padding: 0;
     }
-    h3{
+h3{
         font-size: 1.7rem;
         font-weight: normal;
+    }
+h4{
+        font-size: 1.1rem;
     }
 }
